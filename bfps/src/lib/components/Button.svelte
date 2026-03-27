@@ -21,13 +21,13 @@
     children: Snippet;
   } = $props();
 
-  const baseStyles = 'inline-flex items-center justify-center rounded-full font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseStyles = 'inline-flex items-center justify-center rounded-xl font-bold tracking-tight transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed uppercase text-xs sm:text-sm';
   
   const variantStyles = {
-    primary: 'bg-school-gold text-school-navy shadow-md hover:bg-yellow-400 hover:-translate-y-0.5 focus:ring-school-gold',
-    secondary: 'bg-school-navy text-white shadow-md hover:bg-blue-800 hover:-translate-y-0.5 focus:ring-school-navy',
-    outline: 'border-2 border-school-navy text-school-navy hover:bg-school-navy hover:text-white focus:ring-school-navy',
-    ghost: 'text-school-navy hover:bg-slate-100 focus:ring-school-navy'
+    primary: 'bg-school-navy text-white shadow-lg shadow-blue-900/20 hover:bg-blue-950 hover:shadow-xl hover:-translate-y-0.5 focus:ring-school-navy ring-1 ring-white/10',
+    secondary: 'bg-school-gold text-school-navy shadow-lg shadow-yellow-500/20 hover:bg-yellow-400 hover:shadow-xl hover:-translate-y-0.5 focus:ring-school-gold',
+    outline: 'border border-slate-200 bg-white text-school-navy shadow-sm hover:border-school-navy hover:bg-slate-50 hover:shadow-md hover:-translate-y-0.5 focus:ring-school-navy',
+    ghost: 'text-school-navy hover:bg-slate-50 focus:ring-school-navy'
   };
 
   const sizeStyles = {

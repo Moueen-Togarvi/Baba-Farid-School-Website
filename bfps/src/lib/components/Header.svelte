@@ -20,7 +20,7 @@
 
 <header class="sticky top-0 z-50 w-full bg-school-navy text-white shadow-md">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex h-20 items-center justify-between">
+    <div class="flex h-20 items-center">
       <!-- Logo -->
       <div class="flex flex-shrink-0 items-center">
         <a href="/" class="flex items-center">
@@ -29,7 +29,7 @@
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden lg:block">
+      <nav class="hidden flex-1 justify-center lg:flex">
         <ul class="flex items-center space-x-6 xl:space-x-8">
           {#each links as link}
             <li>

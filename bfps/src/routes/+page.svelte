@@ -1,6 +1,46 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import Button from '$lib/components/Button.svelte';
   import Card from '$lib/components/Card.svelte';
+
+  let typewriterText = $state('');
+  let currentPhraseIndex = 0;
+  const phrases = [
+    'Empowering Minds, Transforming Futures.',
+    'Quality Education for Every Child.',
+    'A Tradition of Excellence Since 2015.'
+  ];
+
+  function typeWriter() {
+    let charIndex = 0;
+    const interval = setInterval(() => {
+      typewriterText = phrases[currentPhraseIndex].slice(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === phrases[currentPhraseIndex].length) {
+        clearInterval(interval);
+        setTimeout(() => {
+          deleteWriter();
+        }, 2000);
+      }
+    }, 100);
+  }
+
+  function deleteWriter() {
+    let charIndex = phrases[currentPhraseIndex].length;
+    const interval = setInterval(() => {
+      typewriterText = phrases[currentPhraseIndex].slice(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        clearInterval(interval);
+        currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+        setTimeout(typeWriter, 500);
+      }
+    }, 50);
+  }
+
+  onMount(() => {
+    typeWriter();
+  });
 </script>
 
 <svelte:head>
@@ -8,50 +48,53 @@
 </svelte:head>
 
 <!-- Hero Section -->
-<section class="relative overflow-hidden bg-white py-16 lg:py-24">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-white pt-2 pb-16 lg:pt-4 lg:pb-20">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col items-center justify-between gap-12 lg:flex-row">
+    <div class="flex flex-col items-center justify-between gap-8 lg:flex-row lg:items-start lg:gap-16">
       <!-- Text Content -->
-      <div class="z-10 text-center lg:text-left lg:w-1/2">
-        <span class="mb-4 inline-block rounded-full bg-school-gold/20 px-4 py-1.5 text-sm font-semibold tracking-wider text-school-navy uppercase ring-1 ring-school-gold/50">
+      <div class="z-10 text-center lg:text-left lg:w-1/2 lg:pt-8">
+        <span class="mb-4 inline-block rounded-full bg-school-gold/20 px-4 py-1.5 text-xs font-semibold tracking-wider text-school-navy uppercase ring-1 ring-school-gold/50">
           Admissions Open For 2026
         </span>
-        <h1 class="mb-6 text-4xl font-extrabold tracking-tight text-school-navy sm:text-5xl lg:text-6xl">
-          <div class="school-name-animate text-school-gold mb-2">Baba Farid Public School</div>
-          Shaping the Leaders of Tomorrow
+        <h1 class="mb-6 font-extrabold tracking-tight text-school-navy">
+          <div class="text-xl font-bold uppercase tracking-widest text-school-gold mb-3">
+            {typewriterText}<span class="animate-pulse">|</span>
+          </div>
+          <span class="text-3xl sm:text-4xl lg:text-5xl block mb-2 opacity-90 text-school-green">Welcome to</span>
+          <span class="text-3xl sm:text-5xl lg:text-6xl block text-school-navy tracking-tighter drop-shadow-sm font-black whitespace-nowrap">
+            Baba Farid Public School
+          </span>
         </h1>
         <p class="mb-10 max-w-2xl text-lg text-slate-600 sm:text-xl lg:mx-0">
-          Providing exceptional, <strong class="text-school-navy">100% free</strong> education from Class 1 to 8. Proudly registered with the Punjab Education Foundation (PEF).
+          Experience a world-class, <strong class="text-school-navy font-bold">100% free education</strong> where every student is mentored to achieve their highest potential. Proudly partnering with the Punjab Education Foundation (PEF).
         </p>
         
         <div class="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
-          <Button href="/about" size="lg" variant="outline">Discover More</Button>
+          <Button href="/about" size="lg" variant="primary">Our Mission</Button>
+          <Button href="/academics" size="lg" variant="outline">Curriculum</Button>
         </div>
       </div>
 
       <!-- Image Content -->
-      <div class="relative lg:w-1/2">
+      <div class="relative w-full lg:w-1/2 max-w-2xl lg:mt-4">
         <div class="absolute -left-4 -top-4 h-full w-full rounded-2xl bg-school-gold/10"></div>
         <div class="absolute -bottom-4 -right-4 h-full w-full rounded-2xl bg-school-navy/5"></div>
-        <img 
-          src="/hero-children.png" 
-          alt="Happy school children" 
-          class="relative z-10 w-full rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500"
-        />
+        <div class="relative z-10 overflow-hidden rounded-2xl shadow-2x-strong ring-1 ring-slate-200">
+          <img 
+            src="/image.png" 
+            alt="Baba Farid Public School Campus" 
+            class="h-64 sm:h-96 lg:h-[520px] w-full object-cover transition-transform hover:scale-[1.01] duration-500"
+          />
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <style>
-  .school-name-animate {
-    animation: float 4s ease-in-out infinite;
-    display: inline-block;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  :global(.shadow-2x-strong) {
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
   }
 </style>
 
