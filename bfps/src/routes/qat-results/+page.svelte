@@ -25,41 +25,42 @@
 
 <section class="bg-white py-16 lg:py-24">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl">
+    <div class="max-w-4xl mx-auto mb-20 text-center">
+      <div class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-school-gold/10 text-school-gold rounded-full text-xs font-bold border border-school-gold/20 mb-6 uppercase tracking-widest">
+         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg>
+         Excellence Verified
+      </div>
+      <h2 class="text-3xl md:text-5xl font-black text-school-navy tracking-tight mb-6">Quality Assurance <span class="text-school-gold">Performance</span></h2>
+      <p class="text-lg text-slate-500 font-light leading-relaxed">
+        As a registered PEF partner, our standards are rigorously verified. These annual Quality Assurance Tests (QAT) demonstrate our consistent ranking among the top-tier institutions.
+      </p>
+    </div>
+
+    <!-- Results Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {#each qatResults as result}
+        <div class="flex flex-col items-center text-center p-10 rounded-3xl bg-slate-50 shadow-sm ring-1 ring-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500 group border-b-4 border-transparent hover:border-school-gold">
+           <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4 inline-block bg-white px-3 py-1 rounded-full ring-1 ring-slate-100">{result.year}</span>
+           <p class="text-6xl font-black text-school-navy group-hover:text-school-gold transition-colors duration-300 mb-2">{result.passRate}%</p>
+           <p class="text-sm font-medium text-slate-500 mt-2 max-w-[200px] leading-relaxed">{result.text}</p>
+        </div>
+      {/each}
       
-      <div class="mb-12 text-center">
-        <h2 class="text-3xl font-bold text-school-navy">Academic Excellence Guaranteed</h2>
-        <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-school-gold"></div>
-        <p class="mt-6 text-slate-600">
-          As a registered PEF partner school, our students undergo rigorous Quality Assurance Tests (QAT) annually. Our results speak for themselves, demonstrating our unwavering commitment to educational excellence.
-        </p>
+      <!-- PEF Badge Card -->
+      <div class="flex flex-col justify-center items-center text-center p-10 rounded-3xl bg-school-navy text-white shadow-xl hover:-translate-y-2 transition-transform duration-500 relative overflow-hidden border-b-4 border-school-gold lg:col-span-1">
+         <div class="absolute -right-10 -top-10 h-32 w-32 bg-white/5 rounded-full blur-2xl"></div>
+         <div class="absolute -left-10 -bottom-10 h-32 w-32 bg-school-gold/20 rounded-full blur-2xl"></div>
+         
+         <svg class="h-12 w-12 text-school-gold mb-6 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+         </svg>
+         
+         <span class="relative z-10 text-xs font-bold text-school-gold uppercase tracking-widest mb-2">Authenticated</span>
+         <p class="relative z-10 text-3xl font-black mb-2 leading-tight">PEF Certified Excellence</p>
+         <p class="relative z-10 text-xs text-white/50">Quality Matrix Verified</p>
       </div>
-
-      <div class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
-        <ul class="divide-y divide-slate-100">
-          {#each qatResults as result}
-            <li class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 transition-colors">
-              <div class="flex items-center gap-6">
-                <div class="flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-xl bg-school-navy text-school-gold">
-                   <span class="text-xl font-bold">{result.year}</span>
-                </div>
-                <div>
-                   <h3 class="text-xl font-bold text-school-navy">{result.passRate}% Pass Rate</h3>
-                   <p class="text-sm text-slate-500 mt-1">{result.text}</p>
-                </div>
-              </div>
-              
-              <div class="mt-4 sm:mt-0 flex items-center gap-2 rounded-full bg-school-green/10 px-4 py-1.5 text-sm font-medium text-school-green">
-                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-                PEF Verified
-              </div>
-            </li>
-          {/each}
-        </ul>
-      </div>
-
     </div>
   </div>
 </section>

@@ -44,7 +44,7 @@
         
         <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <h3 class="mb-4 font-bold text-school-navy flex items-center gap-2">
-             <svg class="h-6 w-6 text-school-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+             <svg class="h-6 w-6 text-school-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
              </svg>
              Admission Requirements
@@ -78,7 +78,7 @@
         </div>
         
         <div class="rounded-2xl bg-white p-6 text-sm text-slate-700 border border-slate-200 shadow-sm ring-1 ring-slate-100">
-          <strong>Questions about admission?</strong> Feel free to WhatsApp Principal Ahmad Saeed directly at <a href="https://wa.me/923059743641" class="font-bold underline text-school-navy hover:text-school-green transition-colors">0305-9743641</a>.
+          <strong>Questions about admission?</strong> Feel free to WhatsApp Principal Ahmad Saeed directly at <a href="https://wa.me/923059743641" class="font-bold underline text-school-navy hover:text-school-gold transition-colors">0305-9743641</a>.
         </div>
       </div>
       
@@ -87,7 +87,7 @@
         <Card class="relative overflow-hidden">
           {#if formState === 'success'}
             <div class="flex flex-col items-center justify-center py-16 text-center animate-in fade-in duration-500">
-              <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-green-100 text-green-600">
+              <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-school-gold/20 text-school-navy">
                 <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>

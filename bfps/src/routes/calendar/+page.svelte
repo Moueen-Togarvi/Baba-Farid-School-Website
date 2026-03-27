@@ -17,7 +17,7 @@
     switch (type) {
       case 'academic': return 'bg-blue-100 text-blue-700 ring-blue-500/20';
       case 'exam': return 'bg-red-100 text-red-700 ring-red-500/20';
-      case 'result': return 'bg-school-green/20 text-school-green ring-school-green/30';
+      case 'result': return 'bg-school-gold/20 text-school-navy ring-school-gold/30';
       case 'holiday': return 'bg-amber-100 text-amber-700 ring-amber-500/20';
       case 'event': return 'bg-purple-100 text-purple-700 ring-purple-500/20';
       default: return 'bg-slate-100 text-slate-700 ring-slate-500/20';

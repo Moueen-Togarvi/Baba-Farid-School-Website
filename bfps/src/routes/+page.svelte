@@ -8,7 +8,7 @@
   const phrases = [
     'Empowering Minds, Transforming Futures.',
     'Quality Education for Every Child.',
-    'A Tradition of Excellence Since 2015.'
+    'A Tradition of Excellence Since 2013.'
   ];
 
   function typeWriter() {
@@ -109,7 +109,7 @@
         <p class="mt-2 text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">Expert Educators</p>
       </div>
       <div class="text-center border-t border-slate-100 pt-6 lg:border-l lg:border-t-0 lg:pt-0 group cursor-default">
-        <p class="text-3xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">2015</p>
+        <p class="text-3xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">2013</p>
         <p class="mt-2 text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">Year Founded</p>
       </div>
       <div class="text-center border-l border-t border-slate-100 pt-6 lg:border-t-0 lg:pt-0 group cursor-default">
@@ -148,7 +148,7 @@
       <div class="order-1 lg:order-2">
         <div class="flex items-center gap-3 mb-6">
            <div class="h-[1px] w-8 bg-school-gold"></div>
-           <span class="text-sm font-bold uppercase tracking-widest text-school-gold">Est. 2015</span>
+           <span class="text-sm font-bold uppercase tracking-widest text-school-gold">Est. 2013</span>
         </div>
         <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-school-navy tracking-tight leading-[1.1] mb-8">
           A Decade of <span class="text-transparent bg-clip-text bg-gradient-to-r from-school-navy to-slate-600">Free Excellence</span>
@@ -252,8 +252,8 @@
         
         <div class="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-6 sm:max-w-4xl sm:grid-cols-3">
           <!-- Feature Card 1 -->
-          <div class="rounded-2xl bg-white p-6 shadow-md ring-1 ring-school-green/20 border-t-4 border-t-school-green">
-            <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-school-green/10 text-school-green">
+          <div class="rounded-2xl bg-white p-6 shadow-md ring-1 ring-school-gold/20 border-t-4 border-t-school-gold">
+            <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-school-gold/10 text-school-gold">
               <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -289,39 +289,41 @@
 <!-- QAT Performance -->
 <section id="results" class="bg-white py-24 lg:py-32 border-t border-slate-100">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col lg:flex-row gap-16 items-center">
-      <div class="lg:w-1/3">
-        <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-school-gold mb-4">Excellence Verified</h2>
-        <h3 class="text-4xl font-black text-school-navy tracking-tight mb-8">Unmatched QAT <span class="text-school-gold">Performance</span></h3>
-        <p class="text-slate-500 leading-relaxed font-light mb-8">
-          Our annual Quality Assurance Tests (QAT) conducted by PEF consistently place us among the top-performing schools in the region.
-        </p>
-        <div class="inline-flex items-center gap-3 px-4 py-2 bg-school-gold/5 text-school-gold rounded-full text-sm font-bold border border-school-gold/20">
-           <svg class="h-5 w-5 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-           </svg>
-           PEF Certified Top Tier
-        </div>
+    <div class="text-center max-w-3xl mx-auto mb-20">
+      <div class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-school-gold/10 text-school-gold rounded-full text-xs font-bold border border-school-gold/20 mb-6 uppercase tracking-widest">
+         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg>
+         Excellence Verified
       </div>
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-school-navy tracking-tight mb-6">Unmatched QAT <span class="text-school-gold">Performance</span></h2>
+      <p class="text-lg text-slate-500 font-light leading-relaxed">
+        Our annual Quality Assurance Tests (QAT) conducted by the Punjab Education Foundation consistently place us among the top-performing schools in the region.
+      </p>
+    </div>
 
-      <div class="lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 gap-6">
-        {#each [
-          { year: '2024', rate: '87%', label: 'Current Pass Rate' },
-          { year: '2023', rate: '85%', label: 'Performance Peak' },
-          { year: '2022', rate: '83%', label: 'Consistent Growth' },
-          { year: '2021', rate: '80%', label: 'Resilient Standards' }
-        ] as stat}
-          <div class="p-8 rounded-3xl bg-white ring-1 ring-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 group border-b-4 border-transparent hover:border-school-gold">
-             <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{stat.year}</p>
-             <p class="text-4xl font-black text-school-navy group-hover:text-school-gold transition-colors">{stat.rate}</p>
-             <p class="text-xs font-medium text-slate-500 mt-2">{stat.label}</p>
-          </div>
-        {/each}
-        <div class="col-span-2 sm:col-span-1 p-8 rounded-3xl bg-school-navy text-white shadow-xl flex flex-col justify-center">
-           <p class="text-sm font-bold text-school-gold uppercase tracking-widest mb-2">Total Score</p>
-           <p class="text-3xl font-black">A+ Grade</p>
-           <p class="text-xs text-white/50 mt-2">PEF Rating Matrix</p>
+    <!-- Column layout for stats -->
+    <div class="flex flex-col md:flex-row flex-wrap justify-center items-stretch gap-6 lg:gap-8">
+      {#each [
+        { year: '2024', rate: '87%', label: 'Current Pass Rate' },
+        { year: '2023', rate: '85%', label: 'Performance Peak' },
+        { year: '2022', rate: '83%', label: 'Consistent Growth' },
+        { year: '2021', rate: '80%', label: 'Resilient Standards' }
+      ] as stat}
+        <div class="flex-1 min-w-[200px] flex flex-col justify-center items-center text-center p-8 lg:p-10 rounded-3xl bg-slate-50 shadow-sm ring-1 ring-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500 group border-b-4 border-transparent hover:border-school-gold">
+           <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4 inline-block bg-white px-3 py-1 rounded-full ring-1 ring-slate-100">{stat.year}</span>
+           <p class="text-5xl font-black text-school-navy group-hover:text-school-gold transition-colors duration-300 mb-2">{stat.rate}</p>
+           <p class="text-sm font-medium text-slate-500">{stat.label}</p>
         </div>
+      {/each}
+      
+      <div class="flex-1 min-w-[240px] flex flex-col justify-center items-center text-center p-8 lg:p-10 rounded-3xl bg-school-navy text-white shadow-xl hover:-translate-y-2 transition-transform duration-500 relative overflow-hidden border-b-4 border-school-gold">
+         <div class="absolute -right-10 -top-10 h-32 w-32 bg-white/5 rounded-full blur-2xl"></div>
+         <div class="absolute -left-10 -bottom-10 h-32 w-32 bg-school-gold/20 rounded-full blur-2xl"></div>
+         
+         <span class="relative z-10 text-xs font-bold text-school-gold uppercase tracking-widest mb-4 inline-block bg-white/10 px-3 py-1 rounded-full ring-1 ring-white/20">Total Score</span>
+         <p class="relative z-10 text-5xl font-black mb-2">A+ <span class="text-school-gold text-3xl">★</span></p>
+         <p class="relative z-10 text-sm font-medium text-white/70">PEF Rating Matrix</p>
       </div>
     </div>
   </div>

@@ -72,7 +72,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d={activity.icon} />
             </svg>
           </div>
-          <span class="mb-2 text-xs font-bold uppercase tracking-wider text-school-green">{activity.category}</span>
+          <span class="mb-2 text-xs font-bold uppercase tracking-wider text-school-navy group-hover:text-school-gold transition-colors">{activity.category}</span>
           <h3 class="mb-3 text-xl font-bold text-school-navy">{activity.title}</h3>
           <p class="text-slate-600 leading-relaxed max-w-sm">{activity.description}</p>
         </Card>

@@ -5,12 +5,15 @@
 
   const links = [
     { href: '/', label: 'Home' },
-    { href: '#about', label: 'Our Story' },
-    { href: '#academics', label: 'Academics' },
-    { href: '#results', label: 'QAT Results' },
-    { href: '#activities', label: 'Activities' },
-    { href: '#gallery', label: 'Gallery' },
-    { href: '#contact', label: 'Contact' }
+    { href: '/about', label: 'About Us' },
+    { href: '/academics', label: 'Academics' },
+    { href: '/admissions', label: 'Admissions' },
+    { href: '/pef', label: 'PEF' },
+    { href: '/qat-results', label: 'QAT Results' },
+    { href: '/check-result', label: 'Check Result' },
+    { href: '/blog', label: 'Blog & News' },
+    { href: '/gallery', label: 'Gallery' },
+    { href: '/contact', label: 'Contact' }
   ];
 
   function toggleMobileMenu() {
@@ -24,7 +27,7 @@
       <!-- Logo -->
       <div class="flex flex-shrink-0 items-center">
         <a href="/" class="flex items-center">
-          <img src="/WhatsApp_Image_2026-03-27_at_4.39.16_PM-removebg-preview.png" alt="Baba Farid Public School Logo" class="h-16 w-auto sm:h-20" />
+          <img src="/image-removebg-preview.png" alt="Baba Farid Public School Logo" class="h-16 w-auto sm:h-24" />
         </a>
       </div>
 

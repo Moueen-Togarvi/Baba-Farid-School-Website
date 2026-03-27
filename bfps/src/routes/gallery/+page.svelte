@@ -3,14 +3,14 @@
   
   // Placeholder images - using simple colored blocks in SVG format to simulate photos
   const images = [
-    { id: 1, title: 'Annual Day Celebrations', category: 'Events', color: 'bg-emerald-500' },
-    { id: 2, title: 'Computer Lab Session', category: 'Academics', color: 'bg-blue-500' },
-    { id: 3, title: 'Campus View', category: 'Infrastructure', color: 'bg-indigo-500' },
-    { id: 4, title: 'Science Exhibition', category: 'Events', color: 'bg-violet-500' },
-    { id: 5, title: 'Sports Gala Final', category: 'Sports', color: 'bg-amber-500' },
-    { id: 6, title: 'Morning Assembly', category: 'Daily Life', color: 'bg-rose-500' },
-    { id: 7, title: 'Library Reading Time', category: 'Academics', color: 'bg-teal-500' },
-    { id: 8, title: 'Tree Plantation', category: 'Events', color: 'bg-lime-500' },
+    { id: 1, title: 'Annual Day Celebrations', category: 'Events', color: 'bg-school-navy' },
+    { id: 2, title: 'Computer Lab Session', category: 'Academics', color: 'bg-slate-800' },
+    { id: 3, title: 'Campus View', category: 'Infrastructure', color: 'bg-school-navy' },
+    { id: 4, title: 'Science Exhibition', category: 'Events', color: 'bg-slate-800' },
+    { id: 5, title: 'Sports Gala Final', category: 'Sports', color: 'bg-school-navy' },
+    { id: 6, title: 'Morning Assembly', category: 'Daily Life', color: 'bg-slate-800' },
+    { id: 7, title: 'Library Reading Time', category: 'Academics', color: 'bg-school-navy' },
+    { id: 8, title: 'Tree Plantation', category: 'Events', color: 'bg-slate-800' },
   ];
   
   let selectedImage = $state<number | null>(null);

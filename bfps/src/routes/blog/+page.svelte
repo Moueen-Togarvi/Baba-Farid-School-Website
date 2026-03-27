@@ -47,25 +47,42 @@
 
 <section class="bg-white py-16 lg:py-24">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
       {#each posts as post}
-        <Card hover class="flex flex-col h-full">
-          <div class="mb-4">
-            <span class="inline-block rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-school-navy">
-              {post.category}
-            </span>
+        <div class="group h-full flex flex-col bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 ring-1 ring-slate-100 hover:ring-school-gold/20">
+          <div class="bg-slate-100 h-56 w-full relative overflow-hidden group-hover:scale-105 transition-transform duration-700">
+             <div class="absolute inset-0 bg-school-navy/10"></div>
+             <div class="absolute inset-0 flex items-center justify-center opacity-30">
+                <svg class="h-16 w-16 text-school-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14 2v4a2 2 0 002 2h4" />
+                </svg>
+             </div>
           </div>
-          <h2 class="mb-2 text-xl font-bold text-slate-900 line-clamp-2">{post.title}</h2>
-          <p class="mb-4 text-sm text-slate-500">
-            <time>{post.date}</time>
-          </p>
-          <p class="mb-6 flex-grow text-slate-600 line-clamp-3">
-            {post.excerpt}
-          </p>
-          <button class="mt-auto self-start border-b-2 border-school-gold pb-0.5 text-sm font-bold text-school-navy transition-colors hover:text-school-gold">
-            Read Full Story &rarr;
-          </button>
-        </Card>
+          
+          <div class="p-8 flex flex-col flex-grow">
+            <div class="flex items-center justify-between mb-4">
+               <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-school-gold bg-school-gold/5 px-3 py-1 rounded-full border border-school-gold/10">{post.category}</span>
+               <span class="text-[10px] font-medium text-slate-400 uppercase tracking-widest">{post.date}</span>
+            </div>
+            
+            <h2 class="text-2xl font-black text-school-navy mb-4 group-hover:text-school-gold transition-colors leading-tight">{post.title}</h2>
+            
+            <p class="text-slate-500 font-light leading-relaxed mb-8 line-clamp-3">
+              {post.excerpt}
+            </p>
+            
+            <button class="mt-auto flex items-center gap-2 group/btn text-sm font-bold text-school-navy">
+               <span class="relative">
+                 Read Full Story
+                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-school-gold transition-all duration-300 group-hover/btn:w-full"></span>
+               </span>
+               <svg class="h-4 w-4 transform group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+               </svg>
+            </button>
+          </div>
+        </div>
       {/each}
     </div>
   </div>

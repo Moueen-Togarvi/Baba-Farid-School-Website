@@ -8,19 +8,22 @@
       
       <!-- School Info -->
       <div class="space-y-4">
-        <h3 class="text-xl font-bold tracking-wider text-school-gold">Baba Farid Public School</h3>
-        <p class="text-sm leading-relaxed text-slate-400">
-          Providing high-quality, 100% free education from Class 1 to 8. We believe knowledge is the light of tomorrow.
+        <div class="flex items-center gap-4 mb-4">
+          <img src="/image-removebg-preview.png" alt="Logo" class="h-16 w-auto brightness-110" />
+          <h3 class="text-xl font-black tracking-tight text-white leading-tight">Baba Farid<br/><span class="text-school-gold">Public School</span></h3>
+        </div>
+        <p class="text-sm leading-relaxed text-slate-400 pt-2">
+          Providing high-quality, 100% free education from Class 1 to 8 in Fatehwara Sharif.
         </p>
-        <div class="mt-4 flex items-center gap-3 rounded-lg border border-school-green/30 bg-school-green/10 p-3">
-          <div class="flex h-8 w-8 items-center justify-center rounded-full bg-school-green/20 text-school-green">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+        <div class="mt-6 flex items-center gap-3 rounded-xl border border-school-gold/30 bg-school-gold/5 p-4 ring-1 ring-white/5">
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-school-gold/20 text-school-gold shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-6 w-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <div>
-            <p class="text-sm font-semibold text-white">PEF Registered</p>
-            <p class="text-xs text-slate-400">Punjab Education Foundation</p>
+            <p class="text-xs font-bold uppercase tracking-widest text-school-gold">Excellence Verified</p>
+            <p class="text-sm font-bold text-white">PEF REGISTERED</p>
           </div>
         </div>
       </div>
@@ -41,8 +44,8 @@
       <div>
         <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white">Resources</h3>
         <ul class="space-y-3 text-sm">
-          <li><a href="/qat-results" class="transition-colors hover:text-school-gold">QAT Results</a></li>
-          <li><a href="/activities" class="transition-colors hover:text-school-gold">Activities & Events</a></li>
+          <li><a href="/check-result" class="transition-colors hover:text-school-gold">Check Result</a></li>
+          <li><a href="/qat-results" class="transition-colors hover:text-school-gold">QAT Performance</a></li>
           <li><a href="/calendar" class="transition-colors hover:text-school-gold">Academic Calendar</a></li>
           <li><a href="/blog" class="transition-colors hover:text-school-gold">News & Blog</a></li>
         </ul>

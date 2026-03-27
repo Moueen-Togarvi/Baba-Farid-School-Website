@@ -44,12 +44,12 @@
       </Card>
       
       <!-- Middle -->
-      <Card class="border-t-4 border-t-school-green">
+      <Card class="border-t-4 border-t-school-navy">
         <h2 class="text-2xl font-bold text-school-navy">Middle Classes</h2>
-        <span class="mt-1 inline-block text-sm font-semibold uppercase tracking-wider text-school-green">Class 6 to 8</span>
+        <span class="mt-1 inline-block text-sm font-semibold uppercase tracking-wider text-school-navy">Class 6 to 8</span>
         <div class="mt-6 space-y-4 text-slate-600">
            <p>The middle school curriculum expands upon the foundational knowledge, introducing more complex concepts and critical thinking exercises.</p>
-           <ul class="list-inside list-disc space-y-2 marker:text-school-green">
+           <ul class="list-inside list-disc space-y-2 marker:text-school-gold">
              <li>Advanced scientific principles and experiments</li>
              <li>In-depth Mathematical problem solving</li>
              <li>Comprehensive Language Arts and Literature</li>

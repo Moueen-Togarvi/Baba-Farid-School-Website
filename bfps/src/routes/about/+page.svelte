@@ -20,7 +20,7 @@
       <h2 class="text-3xl font-bold text-school-navy">Our History & Foundation</h2>
       <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-school-gold"></div>
       <p class="mt-8 text-lg leading-relaxed text-slate-600">
-        Established in <strong>2015</strong>, Baba Farid Public School was founded with a singular vision: to make high-quality education accessible to every child in Fatehwara Sharif, Bahawalnagar. Understanding the financial constraints of many families, we set out to build an institution where learning comes first, and money is never a barrier.
+        Established in <strong>2013</strong>, Baba Farid Public School was founded with a singular vision: to make high-quality education accessible to every child in Fatehwara Sharif, Bahawalnagar. Understanding the financial constraints of many families, we set out to build an institution where learning comes first, and money is never a barrier.
       </p>
       <p class="mt-6 text-lg leading-relaxed text-slate-600">
         Through our steadfast dedication and partnership with the <strong>Punjab Education Foundation (PEF)</strong>, we guarantee 100% free education, free books, and absolutely no hidden fees for all students from Class 1 to Class 8.
@@ -34,8 +34,8 @@
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid gap-8 md:grid-cols-2">
       <!-- Mission -->
-      <Card class="flex h-full flex-col border-t-4 border-t-school-green">
-        <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-school-green/10 text-school-green">
+      <Card class="flex h-full flex-col border-t-4 border-t-school-navy">
+        <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-school-navy/10 text-school-navy">
           <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
