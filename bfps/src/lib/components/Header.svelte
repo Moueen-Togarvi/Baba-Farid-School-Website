@@ -5,12 +5,12 @@
 
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About Us' },
-    { href: '/academics', label: 'Academics' },
-    { href: '/admissions', label: 'Admissions' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/pef', label: 'PEF' },
-    { href: '/contact', label: 'Contact' }
+    { href: '#about', label: 'Our Story' },
+    { href: '#academics', label: 'Academics' },
+    { href: '#results', label: 'QAT Results' },
+    { href: '#activities', label: 'Activities' },
+    { href: '#gallery', label: 'Gallery' },
+    { href: '#contact', label: 'Contact' }
   ];
 
   function toggleMobileMenu() {

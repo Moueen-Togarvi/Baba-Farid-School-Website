@@ -7,10 +7,10 @@
 </svelte:head>
 
 <!-- Header Banner -->
-<div class="bg-school-navy py-16 text-center text-white">
+<div class="bg-white py-16 text-center text-school-navy border-b border-slate-100">
   <div class="container mx-auto px-4">
     <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">About Us</h1>
-    <p class="mt-4 text-lg text-slate-300">Discover the history and mission of Baba Farid Public School.</p>
+    <p class="mt-4 text-lg text-slate-500">Discover the history and mission of Baba Farid Public School.</p>
   </div>
 </div>
 
