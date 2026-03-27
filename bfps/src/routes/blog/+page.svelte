@@ -38,10 +38,14 @@
 </svelte:head>
 
 <!-- Header Banner -->
-<div class="bg-white py-16 text-center text-school-navy border-b border-slate-100">
-  <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl text-school-gold">News & Updates</h1>
-    <p class="mt-4 text-lg text-slate-500">Stay informed with the latest happenings at Baba Farid Public School.</p>
+<div class="relative overflow-hidden bg-white py-24 text-center border-b border-slate-100">
+  <div class="absolute inset-0 bg-grid-slate-900/[0.02] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]"></div>
+  <div class="container relative mx-auto px-4">
+    <span class="mb-4 inline-block rounded-full bg-school-gold/10 px-4 py-1.5 text-xs font-bold tracking-widest text-school-gold uppercase ring-1 ring-school-gold/20">
+      Academic Blog
+    </span>
+    <h1 class="text-5xl font-black tracking-tight sm:text-7xl text-school-navy mb-6">News & <span class="text-school-gold">Updates</span></h1>
+    <p class="mx-auto max-w-2xl text-xl text-slate-500 font-light leading-relaxed">Stay informed with the latest happenings, milestones, and daily life at Baba Farid Public School.</p>
   </div>
 </div>
 

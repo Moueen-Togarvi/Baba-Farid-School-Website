@@ -16,65 +16,87 @@
 </svelte:head>
 
 <!-- Header Banner -->
-<div class="bg-white py-16 text-center text-school-navy border-b border-slate-100">
-  <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">Our Academics</h1>
-    <p class="mt-4 text-lg text-slate-500">A comprehensive curriculum from Class 1 to 8 designed for holistic growth.</p>
+<div class="relative overflow-hidden bg-white py-24 text-center border-b border-slate-100">
+  <div class="absolute inset-0 bg-grid-slate-900/[0.02] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]"></div>
+  <div class="container relative mx-auto px-4">
+    <span class="mb-4 inline-block rounded-full bg-school-gold/10 px-4 py-1.5 text-xs font-bold tracking-widest text-school-gold uppercase ring-1 ring-school-gold/20">
+      Academic Programs
+    </span>
+    <h1 class="text-5xl font-black tracking-tight sm:text-7xl text-school-navy mb-6">Our <span class="text-school-gold">Academics</span></h1>
+    <p class="mx-auto max-w-2xl text-xl text-slate-500 font-light leading-relaxed">A comprehensive curriculum from Class 1 to 8 designed for holistic growth and elite success.</p>
   </div>
 </div>
 
-<section class="py-16 lg:py-24">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<section class="relative py-24 lg:py-32 overflow-hidden bg-white">
+  <div class="absolute top-0 left-0 -translate-y-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-school-gold/5 rounded-full blur-3xl opacity-50"></div>
+  <div class="container relative mx-auto px-4 sm:px-6 lg:px-8">
     
     <!-- Primary & Middle Sections -->
     <div class="grid gap-12 lg:grid-cols-2">
       <!-- Primary -->
-      <Card class="border-t-4 border-t-school-gold">
-        <h2 class="text-2xl font-bold text-school-navy">Primary Classes</h2>
-        <span class="mt-1 inline-block text-sm font-semibold uppercase tracking-wider text-school-gold">Class 1 to 5</span>
-        <div class="mt-6 space-y-4 text-slate-600">
-           <p>Our primary section focuses on building a strong foundational base in literacy and numeracy. We encourage curiosity and active learning.</p>
-           <ul class="list-inside list-disc space-y-2 marker:text-school-gold">
-             <li>Basic language skills in English and Urdu</li>
-             <li>Foundational Mathematics concepts</li>
-             <li>Introduction to General Science and Islamiat</li>
-             <li>Interactive learning and regular assessments</li>
-           </ul>
-        </div>
-      </Card>
+      <div class="group relative p-1 bg-white rounded-[3rem] shadow-xl hover:shadow-2xl transition-all duration-500 ring-1 ring-slate-200 border-t-4 border-t-school-gold">
+         <div class="p-10">
+            <h2 class="text-3xl font-black text-school-navy mb-2">Primary Classes</h2>
+            <span class="inline-block px-3 py-1 rounded-full bg-school-gold/10 text-xs font-bold uppercase tracking-widest text-school-gold mb-8">Class 1 to 5</span>
+            <div class="space-y-6 text-lg text-slate-500 font-light leading-relaxed">
+               <p>Our primary section focuses on building a strong foundational base in literacy and numeracy. We encourage curiosity and active learning.</p>
+               <ul class="space-y-4">
+                 {#each ['Foundational Language Skills (English/Urdu)', 'Core Mathematics & Science Concepts', 'Islamiat & Ethical Building', 'Regular Assessment Frameworks'] as item}
+                   <li class="flex items-center gap-3">
+                      <div class="h-6 w-6 rounded-full bg-school-gold/20 flex items-center justify-center text-school-gold">
+                        <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <span class="text-slate-700 font-medium text-sm">{item}</span>
+                   </li>
+                 {/each}
+               </ul>
+            </div>
+         </div>
+      </div>
       
       <!-- Middle -->
-      <Card class="border-t-4 border-t-school-navy">
-        <h2 class="text-2xl font-bold text-school-navy">Middle Classes</h2>
-        <span class="mt-1 inline-block text-sm font-semibold uppercase tracking-wider text-school-navy">Class 6 to 8</span>
-        <div class="mt-6 space-y-4 text-slate-600">
-           <p>The middle school curriculum expands upon the foundational knowledge, introducing more complex concepts and critical thinking exercises.</p>
-           <ul class="list-inside list-disc space-y-2 marker:text-school-gold">
-             <li>Advanced scientific principles and experiments</li>
-             <li>In-depth Mathematical problem solving</li>
-             <li>Comprehensive Language Arts and Literature</li>
-             <li>Preparation for Matriculation requirements</li>
-           </ul>
-        </div>
-      </Card>
+      <div class="group relative p-1 bg-white rounded-[3rem] shadow-xl hover:shadow-2xl transition-all duration-500 ring-1 ring-slate-200 border-t-4 border-t-school-navy">
+         <div class="p-10">
+            <h2 class="text-3xl font-black text-school-navy mb-2">Middle Classes</h2>
+            <span class="inline-block px-3 py-1 rounded-full bg-school-navy/10 text-xs font-bold uppercase tracking-widest text-school-navy mb-8">Class 6 to 8</span>
+            <div class="space-y-6 text-lg text-slate-500 font-light leading-relaxed">
+               <p>The middle school curriculum expands upon the foundational knowledge, introducing more complex concepts and critical thinking exercises.</p>
+               <ul class="space-y-4">
+                 {#each ['Advanced Scientific Inquiry', 'Problem Solving in Mathematics', 'Depth in Humanities & Literature', 'Matriculation Prerequisite Training'] as item}
+                   <li class="flex items-center gap-3">
+                      <div class="h-6 w-6 rounded-full bg-school-navy/20 flex items-center justify-center text-school-navy">
+                        <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <span class="text-slate-700 font-medium text-sm">{item}</span>
+                   </li>
+                 {/each}
+               </ul>
+            </div>
+         </div>
+      </div>
     </div>
 
     <!-- Core Subjects -->
-    <div class="mt-20">
-      <div class="mb-10 text-center">
-        <h2 class="text-3xl font-bold text-school-navy">Core Subjects</h2>
-        <p class="mt-3 text-slate-600">The subjects forming the foundation of our Punjab Education Foundation approved curriculum.</p>
+    <div class="mt-24 lg:mt-32">
+      <div class="mb-16 text-center max-w-3xl mx-auto">
+        <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-school-gold mb-4">Core Subjects</h2>
+        <h3 class="text-4xl font-black text-school-navy tracking-tight mb-6">Foundations of <span class="text-school-gold">Excellence</span></h3>
+        <p class="text-lg text-slate-500 font-light">Subject matter curated and approved by the Punjab Education Foundation for maximized intellectual impact.</p>
       </div>
       
-      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-8">
+      <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6 lg:gap-8">
         {#each subjects as subject}
-          <div class="group flex flex-col items-center rounded-2xl bg-white p-6 text-center transition-all hover:-translate-y-1 hover:bg-white hover:shadow-lg hover:ring-1 hover:ring-slate-200">
-            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-school-navy/5 text-school-navy transition-colors group-hover:bg-school-navy group-hover:text-school-gold">
+          <div class="group flex flex-col items-center rounded-[2rem] bg-slate-50 p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:bg-white hover:shadow-2xl hover:ring-1 hover:ring-slate-100 border-b-4 border-transparent hover:border-school-gold">
+            <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white shadow-sm text-school-navy transition-all duration-500 group-hover:bg-school-navy group-hover:text-school-gold group-hover:scale-110">
               <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d={subject.icon} />
               </svg>
             </div>
-            <h3 class="font-bold text-slate-900 group-hover:text-school-navy">{subject.name}</h3>
+            <h3 class="text-sm font-black text-school-navy tracking-widest uppercase">{subject.name}</h3>
           </div>
         {/each}
       </div>
