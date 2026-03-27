@@ -22,8 +22,8 @@
 <!-- Header Banner -->
 <div class="bg-white py-16 text-center text-school-navy border-b border-slate-100">
   <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl text-school-gold">100% Free Admissions</h1>
-    <p class="mt-4 text-lg text-slate-500">No monthly fees, no book charges, no hidden costs.</p>
+    <h1 class="text-3xl font-extrabold tracking-tight sm:text-5xl text-school-gold">100% Free Admissions</h1>
+    <p class="mt-4 text-base sm:text-lg text-slate-500 max-w-sm mx-auto sm:max-w-none">No monthly fees, no book charges, no hidden costs.</p>
   </div>
 </div>
 
@@ -37,7 +37,7 @@
         <div>
           <h2 class="text-3xl font-bold text-school-navy">Join Our School</h2>
           <div class="mt-4 h-1 w-20 rounded-full bg-school-gold"></div>
-          <p class="mt-6 text-slate-600">
+          <p class="mt-6 text-base sm:text-lg text-slate-600">
             Enrolling your child at Baba Farid Public School is completely free. Thanks to the PEF program, we ensure your child receives the best education without the financial burden.
           </p>
         </div>
@@ -97,12 +97,12 @@
               <Button onclick={() => formState = 'idle'} variant="outline">Submit Another Application</Button>
             </div>
           {:else}
-            <div class="border-b border-slate-100 px-8 py-6">
+            <div class="border-b border-slate-100 px-4 py-6 sm:px-8">
               <h2 class="text-xl font-bold text-school-navy">Online Admission Form</h2>
               <p class="text-sm text-slate-500 mt-1">Fill out the details completely to start the enrollment process.</p>
             </div>
             
-            <form onsubmit={handleSubmit} class="space-y-6 px-8 py-6">
+            <form onsubmit={handleSubmit} class="space-y-6 px-4 py-6 sm:px-8">
               <div class="grid gap-6 sm:grid-cols-2">
                 <div>
                   <label for="studentName" class="mb-1.5 block text-sm font-medium text-slate-700">Student's Full Name *</label>

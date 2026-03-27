@@ -4,33 +4,33 @@
 
 <footer class="bg-slate-900 text-slate-300">
   <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 text-center sm:text-left">
       
       <!-- School Info -->
-      <div class="space-y-4">
+      <div class="space-y-4 flex flex-col items-center sm:items-start">
         <div class="flex items-center gap-4 mb-4">
           <img src="/image-removebg-preview.png" alt="Logo" class="h-16 w-auto brightness-110" />
           <h3 class="text-xl font-black tracking-tight text-white leading-tight">Baba Farid<br/><span class="text-school-gold">Public School</span></h3>
         </div>
-        <p class="text-sm leading-relaxed text-slate-400 pt-2">
+        <p class="text-sm leading-relaxed text-slate-400 pt-2 max-w-xs mx-auto sm:mx-0">
           Providing high-quality, 100% free education from Class 1 to 8 in Fatehwara Sharif.
         </p>
-        <div class="mt-6 flex items-center gap-3 rounded-xl border border-school-gold/30 bg-school-gold/5 p-4 ring-1 ring-white/5">
-          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-school-gold/20 text-school-gold shadow-sm">
+        <div class="mt-6 flex items-center gap-3 rounded-xl border border-school-gold/30 bg-school-gold/5 p-4 ring-1 ring-white/5 w-full max-w-[240px] justify-center sm:justify-start">
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-school-gold/20 text-school-gold shadow-sm">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-6 w-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <div>
-            <p class="text-xs font-bold uppercase tracking-widest text-school-gold">Excellence Verified</p>
+          <div class="text-left">
+            <p class="text-[10px] font-bold uppercase tracking-widest text-school-gold">Excellence Verified</p>
             <p class="text-sm font-bold text-white">PEF REGISTERED</p>
           </div>
         </div>
       </div>
 
       <!-- Quick Links -->
-      <div>
-        <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white">Quick Links</h3>
+      <div class="flex flex-col items-center sm:items-start">
+        <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white border-b border-school-gold/30 pb-1 inline-block">Quick Links</h3>
         <ul class="space-y-3 text-sm">
           <li><a href="/about" class="transition-colors hover:text-school-gold">About Us</a></li>
           <li><a href="/academics" class="transition-colors hover:text-school-gold">Academics</a></li>
@@ -41,8 +41,8 @@
       </div>
 
       <!-- Resources -->
-      <div>
-        <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white">Resources</h3>
+      <div class="flex flex-col items-center sm:items-start">
+        <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white border-b border-school-gold/30 pb-1 inline-block">Resources</h3>
         <ul class="space-y-3 text-sm">
           <li><a href="/check-result" class="transition-colors hover:text-school-gold">Check Result</a></li>
           <li><a href="/qat-results" class="transition-colors hover:text-school-gold">QAT Performance</a></li>
@@ -52,15 +52,15 @@
       </div>
 
       <!-- Contact Info -->
-      <div>
-        <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white">Contact Us</h3>
-        <ul class="space-y-4 text-sm">
-          <li class="flex items-start gap-3">
+      <div class="flex flex-col items-center sm:items-start">
+        <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white border-b border-school-gold/30 pb-1 inline-block">Contact Us</h3>
+        <ul class="space-y-4 text-sm flex flex-col items-center sm:items-start">
+          <li class="flex items-start gap-3 justify-center sm:justify-start">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="mt-0.5 h-5 w-5 text-school-gold shrink-0">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
             </svg>
-            <span>Fatehwara Sharif, Bahawalnagar, Punjab, Pakistan</span>
+            <span class="max-w-[200px]">Fatehwara Sharif, Bahawalnagar, Punjab, Pakistan</span>
           </li>
           <li class="flex items-center gap-3">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="h-5 w-5 text-school-gold shrink-0">
@@ -80,7 +80,7 @@
           </li>
         </ul>
         
-        <div class="mt-6 flex space-x-4">
+        <div class="mt-6 flex space-x-4 justify-center sm:justify-start">
           <a href="https://web.facebook.com/ahmadsaeedtogarvi" target="_blank" class="text-slate-400 hover:text-[#1877F2] transition-colors">
             <span class="sr-only">Facebook</span>
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -92,11 +92,11 @@
 
     </div>
     
-    <div class="mt-12 border-t border-slate-800 pt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
-      <p class="text-sm text-slate-500">
+    <div class="mt-12 border-t border-slate-800 pt-8 flex flex-col items-center justify-between gap-4 md:flex-row text-center md:text-left">
+      <p class="text-xs sm:text-sm text-slate-500">
         &copy; {currentYear} Baba Farid Public School. All rights reserved.
       </p>
-      <p class="text-sm text-slate-500 italic">
+      <p class="text-xs sm:text-sm text-slate-500 italic opacity-60">
         Created for Principal Ahmad Saeed
       </p>
     </div>

@@ -57,15 +57,15 @@
           Admissions Open For 2026
         </span>
         <h1 class="mb-6 font-extrabold tracking-tight text-school-navy">
-          <div class="text-lg font-bold uppercase tracking-[0.2em] text-school-gold/80 mb-4 h-8">
+          <div class="text-[10px] sm:text-lg font-bold uppercase tracking-[0.2em] text-school-gold/80 mb-4 h-8">
             {typewriterText}<span class="animate-pulse">|</span>
           </div>
-          <span class="text-4xl sm:text-5xl lg:text-6xl block mb-2 font-medium text-school-navy/70 tracking-tight">Welcome to</span>
-          <span class="text-4xl sm:text-6xl lg:text-7xl block text-school-navy tracking-tighter drop-shadow-sm font-black whitespace-nowrap leading-none">
+          <span class="text-3xl sm:text-5xl lg:text-6xl block mb-2 font-medium text-school-navy/70 tracking-tight">Welcome to</span>
+          <span class="text-3xl xs:text-4xl sm:text-6xl lg:text-7xl block text-school-navy tracking-tighter drop-shadow-sm font-black whitespace-nowrap leading-none">
             Baba Farid <br class="sm:hidden" /> Public School
           </span>
         </h1>
-        <p class="mb-10 max-w-2xl text-lg text-slate-500 sm:text-xl lg:mx-0 leading-relaxed font-light">
+        <p class="mb-10 max-w-2xl text-base text-slate-500 sm:text-xl lg:mx-0 leading-relaxed font-light px-2 sm:px-0">
           Experience a world-class, <strong class="text-school-navy font-bold">100% Free Education</strong> where every student is mentored to achieve their highest potential within an elite academic environment.
         </p>
         
@@ -99,22 +99,22 @@
 <!-- Stats Strip -->
 <section class="relative z-20 -mt-10 mb-16">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 gap-4 rounded-2xl bg-white p-6 shadow-xl ring-1 ring-slate-100 lg:grid-cols-4 lg:p-8">
-      <div class="text-center group cursor-default">
-        <p class="text-3xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">350<span class="text-school-gold">+</span></p>
-        <p class="mt-2 text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">Enrolled Students</p>
+    <div class="grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-slate-200 shadow-xl ring-1 ring-slate-100 lg:grid-cols-4 lg:gap-4 lg:bg-white lg:p-8">
+      <div class="bg-white p-6 text-center group cursor-default">
+        <p class="text-2xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">350<span class="text-school-gold">+</span></p>
+        <p class="mt-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Enrolled Students</p>
       </div>
-      <div class="text-center border-l border-slate-100 group cursor-default">
-        <p class="text-3xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">15</p>
-        <p class="mt-2 text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">Expert Educators</p>
+      <div class="bg-white p-6 text-center group cursor-default">
+        <p class="text-2xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">15</p>
+        <p class="mt-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Expert Educators</p>
       </div>
-      <div class="text-center border-t border-slate-100 pt-6 lg:border-l lg:border-t-0 lg:pt-0 group cursor-default">
-        <p class="text-3xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">2013</p>
-        <p class="mt-2 text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">Year Founded</p>
+      <div class="bg-white p-6 text-center group cursor-default">
+        <p class="text-2xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">2013</p>
+        <p class="mt-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Year Founded</p>
       </div>
-      <div class="text-center border-l border-t border-slate-100 pt-6 lg:border-t-0 lg:pt-0 group cursor-default">
-        <p class="text-3xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">1-8</p>
-        <p class="mt-2 text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">Educational Levels</p>
+      <div class="bg-white p-6 text-center group cursor-default">
+        <p class="text-2xl font-bold text-school-navy lg:text-4xl group-hover:text-school-gold transition-colors duration-300">1-8</p>
+        <p class="mt-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Educational Levels</p>
       </div>
     </div>
   </div>
@@ -150,10 +150,10 @@
            <div class="h-[1px] w-8 bg-school-gold"></div>
            <span class="text-sm font-bold uppercase tracking-widest text-school-gold">Est. 2013</span>
         </div>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-school-navy tracking-tight leading-[1.1] mb-8">
+        <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-school-navy tracking-tight leading-[1.1] mb-8 text-center lg:text-left">
           A Decade of <span class="text-transparent bg-clip-text bg-gradient-to-r from-school-navy to-slate-600">Free Excellence</span>
         </h2>
-        <p class="text-lg text-slate-500 leading-relaxed mb-8 font-light">
+        <p class="text-base sm:text-lg text-slate-500 leading-relaxed mb-8 font-light text-center lg:text-left">
           Baba Farid Public School is more than just an educational center; it is a community beacon. Registered with the <strong>Punjab Education Foundation (PEF)</strong>, we have spent years refining a curriculum that balances traditional values with modern academic rigor.
         </p>
         
@@ -250,35 +250,35 @@
           At Baba Farid Public School, we believe that every child deserves a quality education regardless of their financial background.
         </p>
         
-        <div class="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-6 sm:max-w-4xl sm:grid-cols-3">
+        <div class="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-4 sm:gap-6 sm:max-w-4xl sm:grid-cols-3">
           <!-- Feature Card 1 -->
-          <div class="rounded-2xl bg-white p-6 shadow-md ring-1 ring-school-gold/20 border-t-4 border-t-school-gold">
-            <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-school-gold/10 text-school-gold">
-              <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <div class="rounded-2xl bg-white p-6 shadow-md ring-1 ring-school-gold/20 border-t-4 border-t-school-gold flex flex-row sm:flex-col items-center gap-4 sm:gap-0">
+            <div class="mb-0 sm:mb-4 flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl bg-school-gold/10 text-school-gold">
+              <svg class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-school-navy">No Monthly Fees</h3>
+            <h3 class="text-lg sm:text-xl font-bold text-school-navy">No Monthly Fees</h3>
           </div>
 
           <!-- Feature Card 2 -->
-          <div class="rounded-2xl bg-white p-6 shadow-md ring-1 ring-school-gold/20 border-t-4 border-t-school-gold">
-            <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-school-gold/10 text-school-gold">
-              <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <div class="rounded-2xl bg-white p-6 shadow-md ring-1 ring-school-gold/20 border-t-4 border-t-school-gold flex flex-row sm:flex-col items-center gap-4 sm:gap-0">
+            <div class="mb-0 sm:mb-4 flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl bg-school-gold/10 text-school-gold">
+              <svg class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-school-navy">Free Textbooks</h3>
+            <h3 class="text-lg sm:text-xl font-bold text-school-navy">Free Textbooks</h3>
           </div>
 
           <!-- Feature Card 3 -->
-          <div class="rounded-2xl bg-white p-6 shadow-md ring-1 ring-school-navy/20 border-t-4 border-t-school-navy">
-            <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-school-navy/10 text-school-navy">
-              <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <div class="rounded-2xl bg-white p-6 shadow-md ring-1 ring-school-navy/20 border-t-4 border-t-school-navy flex flex-row sm:flex-col items-center gap-4 sm:gap-0">
+            <div class="mb-0 sm:mb-4 flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl bg-school-navy/10 text-school-navy">
+              <svg class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-school-navy">Free Admissions</h3>
+            <h3 class="text-lg sm:text-xl font-bold text-school-navy">Free Admissions</h3>
           </div>
         </div>
       </div>
@@ -302,28 +302,28 @@
       </p>
     </div>
 
-    <!-- Column layout for stats -->
-    <div class="flex flex-col md:flex-row flex-wrap justify-center items-stretch gap-6 lg:gap-8">
+    <!-- Grid layout for stats -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8">
       {#each [
         { year: '2024', rate: '87%', label: 'Current Pass Rate' },
         { year: '2023', rate: '85%', label: 'Performance Peak' },
         { year: '2022', rate: '83%', label: 'Consistent Growth' },
         { year: '2021', rate: '80%', label: 'Resilient Standards' }
       ] as stat}
-        <div class="flex-1 min-w-[200px] flex flex-col justify-center items-center text-center p-8 lg:p-10 rounded-3xl bg-slate-50 shadow-sm ring-1 ring-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500 group border-b-4 border-transparent hover:border-school-gold">
-           <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4 inline-block bg-white px-3 py-1 rounded-full ring-1 ring-slate-100">{stat.year}</span>
-           <p class="text-5xl font-black text-school-navy group-hover:text-school-gold transition-colors duration-300 mb-2">{stat.rate}</p>
-           <p class="text-sm font-medium text-slate-500">{stat.label}</p>
+        <div class="flex flex-col justify-center items-center text-center p-6 lg:p-10 rounded-2xl bg-white shadow-sm ring-1 ring-slate-100 hover:shadow-2xl transition-all duration-500 group border-b-4 border-transparent hover:border-school-gold">
+           <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 inline-block bg-slate-50 px-3 py-1 rounded-full">{stat.year}</span>
+           <p class="text-3xl lg:text-5xl font-black text-school-navy group-hover:text-school-gold transition-colors duration-300 mb-2">{stat.rate}</p>
+           <p class="text-[10px] lg:text-sm font-medium text-slate-500 uppercase tracking-tight">{stat.label}</p>
         </div>
       {/each}
       
-      <div class="flex-1 min-w-[240px] flex flex-col justify-center items-center text-center p-8 lg:p-10 rounded-3xl bg-school-navy text-white shadow-xl hover:-translate-y-2 transition-transform duration-500 relative overflow-hidden border-b-4 border-school-gold">
+      <div class="col-span-2 md:col-span-1 flex flex-col justify-center items-center text-center p-6 lg:p-10 rounded-2xl bg-school-navy text-white shadow-xl hover:-translate-y-2 transition-transform duration-500 relative overflow-hidden border-b-4 border-school-gold/50">
          <div class="absolute -right-10 -top-10 h-32 w-32 bg-white/5 rounded-full blur-2xl"></div>
          <div class="absolute -left-10 -bottom-10 h-32 w-32 bg-school-gold/20 rounded-full blur-2xl"></div>
          
-         <span class="relative z-10 text-xs font-bold text-school-gold uppercase tracking-widest mb-4 inline-block bg-white/10 px-3 py-1 rounded-full ring-1 ring-white/20">Total Score</span>
-         <p class="relative z-10 text-5xl font-black mb-2">A+ <span class="text-school-gold text-3xl">★</span></p>
-         <p class="relative z-10 text-sm font-medium text-white/70">PEF Rating Matrix</p>
+         <span class="relative z-10 text-[10px] font-bold text-school-gold uppercase tracking-widest mb-4 inline-block bg-white/10 px-3 py-1 rounded-full ring-1 ring-white/20">Total Score</span>
+         <p class="relative z-10 text-3xl lg:text-5xl font-black mb-2">A+ <span class="text-school-gold text-2xl lg:text-3xl">★</span></p>
+         <p class="relative z-10 text-[10px] lg:text-sm font-medium text-white/70 uppercase tracking-tight">PEF Rating Matrix</p>
       </div>
     </div>
   </div>
